@@ -1,6 +1,104 @@
 #root {
   max-width: 1280px;
+  width: 95%;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.628);
+  border-radius: 20px;
+  padding: 1em 0.5em;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
+
+.header > img {
+  width: 150px;
+  height: 150px;
+}
+
+.add {
+  padding: 1em;
+  width: 80%;
+}
+.add > h2 {
+  font-size: 2rem;
+  margin-bottom: 1em !important;
+}
+
+.add > form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+}
+
+.add > form > div {
+  display: flex;
+  gap: 2em;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.add > form > div > input,
+textarea {
+  padding: 0.5em;
+  width: 70%;
+}
+
+.add > form > button {
+  width: fit-content;
+  align-self: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+section:nth-child(2) > h2 {
+  text-align: left;
+  font-size: 3rem;
+  margin-bottom: 1em;
+  align-self: start;
+}
+
+article {
+  padding: 1em 2em;
+  background-color: rgba(0, 0, 0, 0.483);
+  margin-bottom: 1.5em;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  width: fit-content;
+}
+article > h3 {
+  text-align: left;
+  margin-bottom: 1em;
+  color: rgb(239, 55, 55);
+}
+
+article > span {
+  align-self: flex-end;
+}
+
+article > .time {
+  align-self: flex-start;
+}
+
+article > div > button {
+  background-color: transparent;
+  margin-right: 0.2em;
 }

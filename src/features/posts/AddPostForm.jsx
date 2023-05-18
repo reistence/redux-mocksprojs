@@ -35,7 +35,7 @@ const AddPostForm = () => {
   ));
 
   return (
-    <section>
+    <section className="add">
       <h2>Add a new Post</h2>
       <form>
         <div>
@@ -62,7 +62,7 @@ const AddPostForm = () => {
         </div>
         <div>
           <label htmlFor="postContent">Content:</label>
-          <input
+          <textarea
             type="text"
             id="postContent"
             name="postContent"
